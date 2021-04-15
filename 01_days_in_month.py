@@ -7,8 +7,48 @@
 # Если номер месяца некорректен - сообщить об этом
 
 # Номер месяца получать от пользователя следующим образом
-user_input = input("Введите, пожалуйста, номер месяца: ")
-month = int(user_input)
-print('Вы ввели', month)
-
-# TODO здесь ваш код
+while 1:
+    user_input = input("Введите, пожалуйста, номер месяца: ")
+    ok = user_input.isnumeric()
+    if ok == True:
+        month = int(user_input)
+        if month == 1:
+            print('Вы ввели:', month, '\n Количество дней в этом месяце: 31')
+            break
+        elif month == 2:
+            print('Вы ввели:', month, '\n Количество дней в этом месяце: 28')
+            break
+        elif month == 3:
+            print('Вы ввели:', month, '\n Количество дней в этом месяце: 31')
+            break
+        elif month == 4:
+            print('Вы ввели:', month, '\n Количество дней в этом месяце: 30')
+            break
+        elif month == 5:
+            print('Вы ввели:', month, '\n Количество дней в этом месяце: 31')
+            break
+        elif month == 6:
+            print('Вы ввели:', month, '\n Количество дней в этом месяце: 30')
+            break
+        elif month == 7:
+            print('Вы ввели:', month, '\n Количество дней в этом месяце: 31')
+            break
+        elif month == 8:
+            print('Вы ввели:', month, '\n Количество дней в этом месяце: 31')
+            break
+        elif month == 9:
+            print('Вы ввели:', month, '\n Количество дней в этом месяце: 30')
+            break
+        elif month == 10:
+            print('Вы ввели:', month, '\n Количество дней в этом месяце: 31')
+            break
+        elif month == 11:
+            print('Вы ввели:', month, '\n Количество дней в этом месяце: 30')
+            break
+        elif month == 12:
+            print('Вы ввели:', month, '\n Количество дней в этом месяце: 31')
+            break
+        else:
+            print('Вы ввели некорректное значение, месяцев всего 12')
+    else:
+        print('Вы ввели буквы. Введите цифру, пожалуйста')
